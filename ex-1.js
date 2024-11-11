@@ -1,6 +1,28 @@
 function fizzBuzz(n) {
   //Start coding here
+  let result = [];
+
+  for (let i = 1; i <= n; i++) {
+    let output = "";
+
+    if (i % 3 === 0) {
+      output += "Fizz";
+    }
+
+    if (i % 5 === 0) {
+      output += "Buzz";
+    }
+
+    if (output === "") {
+      output = i.toString();
+    }
+
+    result.push(output);
+  }
+
+  return result;
 }
+//ยากมากครับยังไม่เข้าใจการเขียนโค้ดนี้เปิดมาตอนแรกจึ้งไปไม่เป็น แต่เดียวไปลองทำซ้ำๆหลายๆรอบครับ
 
 let result1 = fizzBuzz(3);
 console.log(result1); // ["1","2","Fizz"]
